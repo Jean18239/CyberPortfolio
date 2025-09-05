@@ -3,73 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>CV Jean Robert--Hénaff</title>
-  <link rel="stylesheet" href="CvPortfolio.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cv-container">
-    <!-- En-tête -->
-    <div class="header">
-      <img src="photo.jpg" alt="Photo de profil" class="profile-pic">
-      <h1>CV Jean Robert-Hénaff</h1>
-    </div>
+  <header>
+    <h1>Jean Robert--Hénaff</h1>
+  </header>
+
+  <main class="cv-container">
 
     <!-- Profil -->
-    <div class="section">
-      <div class="section-title">👤 Profil</div>
-      <div class="section-content">
-        <p>Étudiant en BTS SIO au Lycée Dick Ukeiwé (Koutio). Actuellement, je travaille sur des projets de développement de page web et d'applications mobiles. Mon projet à terme est d'être développeur Full Stack avec des compétences en gestion et en informatique. Au cours de ma formation, je vourdais qu'on me confie des minis-projets pour renforcer mes bases en Frontend, Backend + BDD, POO, MCD/MLD et commencer à travailler sur des Frameworks comme React.js et Node.js.</p>
-      </div>
-    </div>
+    <section class="card">
+      <h2>📌 Profil</h2>
+      <p>
+        Étudiant en BTS SIO au Lycée Dick Ukeiwé (Koutio). Actuellement, je travaille sur des projets
+        de développement de page web et d’applications mobiles. Mon projet à terme est d’être développeur
+        Full Stack avec des compétences en gestion et en informatique. Au cours de ma formation, je voudrais
+        qu’on me confie des minis-projets pour renforcer mes bases en Frontend, Backend + BDD, POO, MCD/MLD et
+        commencer à travailler sur des Frameworks comme React.js et Node.js.
+      </p>
+    </section>
 
     <!-- Compétences -->
-    <div class="section">
-      <div class="section-title">💡 Compétences</div>
-      <div class="section-content">
-        <ul>
-          <li>HTML / CSS / PHP</li>
-          <li>Python (scripts, POO)</li>
-          <li>SQL (MySQL)</li>
-          <li>Excel / Word / PowerPoint</li>
-        </ul>
-      </div>
-    </div>
+    <section class="card">
+      <h2>💡 Compétences</h2>
+      <ul>
+        <li>HTML / CSS / PHP</li>
+        <li>Python (scripts, POO)</li>
+        <li>SQL (MySQL)</li>
+        <li>Excel / Word / PowerPoint</li>
+      </ul>
+    </section>
 
     <!-- Projets -->
-    <div class="section">
-      <div class="section-title">💻 Projets</div>
-      <div class="section-content">
-        <ul>
-          <li><a href='https://wanej.hermito.fr' target='_blank'>wanej.hermito.fr</a></li>
-          <li>Etudiant bénévole en informatique pour la configuration d'ordinateurs et d'aide pour les jeunes à réaliser leurs devoirs en informatique au Kimonos du Coeur.</li>
-          <li>Rénovation du site Pronote du Lycée Blaise Pascal</li>
-          <li>Création d'une page web pour échanger des aliments ou des vêtements pendant les émeutes de l'année 2024",
-        </ul>
-      </div>
-    </div>
+    <section class="card">
+      <h2>🚀 Projets</h2>
+      <ul>
+        <li><a href="https://wanej.hemito.fr" target="_blank">wanej.hemito.fr</a></li>
+        <li>Étudiant bénévole en informatique pour la configuration d’ordinateurs et aide aux jeunes à réaliser leurs devoirs.</li>
+        <li>Rénovation du site Pronote du Lycée Blaise Pascal.</li>
+        <li>Création d’une page web pour échanger des aliments ou vêtements pendant les émeutes de 2024.</li>
+      </ul>
+    </section>
 
     <!-- Expériences -->
-    <div class="section">
-      <div class="section-title">💼 Expériences pro</div>
-      <div class="section-content">
-        <ul>
-          <li>Employé à la caisse et au four – Pizzeria Top 6ème</li>
-          <li>Assistant de recherche en agroforesterie – IAC de Port-Laguerre</li>
-          <li>Poissonnier, Extra pour les fêtes de fin d'année – Poissonnerie Belle-Vie</li>
-          <li>Agent de récupération et de recyclage – EMC, Ducos</li>
-        </ul>
-      </div>
-    </div>
+    <section class="card">
+      <h2>💼 Expériences pro</h2>
+      <ul>
+        <li>Employé à la caisse et au four – Pizzeria Top 6ème</li>
+        <li>Assistant de recherche en agrofosterie – IAC de Port-Laguerre</li>
+        <li>Poissonnier, extra fêtes de fin d’année – Poissonnerie Belle-Vie</li>
+        <li>Agent de récupération et recyclage – EMC, Ducos</li>
+      </ul>
+    </section>
 
     <!-- Contact -->
-    <div class="section">
-      <div class="section-title">📬 Contact</div>
-      <div class="section-content">
-        <p>Email : <a href="mailto:jrhnc98@gmail.com">jrhnc98@gmail.com</a><br>
-           Téléphone : +687 755107<br>
-           Adresse : 25, rue des Promeneurs, PK6, Nouméa</p>
-        <p>🌐 Site : <a href="https://jeanrh-cv.000webhostapp.com" target="_blank">jeanrh-cv.000webhostapp.com</a></p>
-      </div>
-    </div>
-  </div>
+    <section class="card">
+      <h2>📞 Contact</h2>
+      <p><b>Email :</b> jrhne98@gmail.com</p>
+      <p><b>Téléphone :</b> +687 755107</p>
+      <p><b>Adresse :</b> 25, rue des Promeneurs, PK6, Nouméa</p>
+      <p><b>Site :</b> <a href="https://jeanrh-cv.000webhostapp.com" target="_blank">jeanrh-cv.000webhostapp.com</a></p>
+    </section>
+
+    <!-- Formulaire -->
+    <section class="card">
+      <h2>📩 Me contacter</h2>
+      <form action="contact.php" method="post" class="contact-form">
+        <label>Nom : <input type="text" name="nom" required></label>
+        <label>Email : <input type="email" name="email" required></label>
+        <label>Message : <textarea name="message" rows="4" required></textarea></label>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+  </main>
 </body>
 </html>

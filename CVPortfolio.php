@@ -7,7 +7,7 @@ $photo = "photo.jpg"; // nom de ton image dans le même dossier
 $titre = "CV $nom";
 
 // Profil
-$profil = "Étudiant en BTS SIO au Lycée Dick Ukeiwé (Koutio). Actuellement, je travaille sur des projets de développement de page web et d'applications mobiles. Mon projet à terme est d'être développeur Full Stack avec des compétences en gestion et en informatique. Au cours de ma formation, je vourdais qu'on me confie des minis-projets pour renforcer mes bases en Frontend, Backend + BDD, POO, MCD/MLD et commencer à travailler sur des Frameworks comme React.js et Node.js.";
+$profil = "Étudiant en BTS SIO au Lycée Dick Ukeiwé (Koutio). Actuellement, je travaille sur des projets de développement de page web et d'applications mobiles. Mon projet à terme est d'être développeur Full Stack avec des compétences en gestion et en informatique. Au cours de ma formation, je voudrais qu'on me confie des minis-projets pour renforcer mes bases en Frontend, Backend + BDD, POO, MCD/MLD et commencer à travailler sur des Frameworks comme React.js et Node.js.";
 
 // Compétences
 $competences = [
@@ -20,10 +20,9 @@ $competences = [
 // Projets
 $projets = [
   "<a href='https://wanej.hermito.fr' target='_blank'>wanej.hermito.fr</a>",
-  "Etudiant bénévole en informatique pour la configuration d'ordinateurs et d'aide pour les jeunes à réaliser leurs devoirs en informatique au Kimonos du Coeur.",
+  "Étudiant bénévole en informatique pour la configuration d'ordinateurs et d'aide pour les jeunes à réaliser leurs devoirs en informatique au Kimonos du Coeur.",
   "Rénovation du site Pronote du Lycée Blaise Pascal",
-  "Création d'une page web pour échanger des aliments ou des vêtements pendant les émeutes de l'année 2024.",
-
+  "Création d'une page web pour échanger des aliments ou des vêtements pendant les émeutes de l'année 2024."
 ];
 
 // Expériences
@@ -54,7 +53,7 @@ $site = "https://jeanrh-cv.000webhostapp.com";
     <!-- En-tête -->
     <div class="header">
       <img src="<?= $photo ?>" alt="Photo de profil" class="profile-pic">
-      <h1><?= $titre ?></h1>
+      <h1><?= $nom ?></h1>
     </div>
 
     <!-- Profil -->
@@ -111,6 +110,20 @@ $site = "https://jeanrh-cv.000webhostapp.com";
         <p>🌐 Site : <a href="<?= $site ?>" target="_blank"><?= $site ?></a></p>
       </div>
     </div>
+
+    <!-- Formulaire de contact -->
+    <div class="section">
+      <div class="section-title">📩 Me contacter</div>
+      <div class="section-content">
+        <form action="contact.php" method="post" class="contact-form">
+          <label>Nom : <input type="text" name="nom" required></label><br>
+          <label>Email : <input type="email" name="email" required></label><br>
+          <label>Message : <textarea name="message" rows="4" required></textarea></label><br>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
   </div>
 </body>
 

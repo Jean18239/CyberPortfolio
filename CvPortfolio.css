@@ -1,74 +1,77 @@
+/* Fond bleu lagon */
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f6fa;
   margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: #00bcd4; /* Bleu lagon */
+  color: #222;
 }
 
-.cv-container {
-  width: 600px;
-  margin: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 20px;
-}
-
-.header {
+header {
   text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 0 6px rgba(0,0,0,0.3);
-  margin-bottom: 10px;
+  padding: 20px;
+  background: #0097a7;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 h1 {
-  color: #2c3e50;
-  font-size: 22px;
   margin: 0;
+  font-size: 2.2em;
 }
 
-.section {
+.cv-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px 20px;
   margin-bottom: 20px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.section-title {
-  background: #1a237e;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 16px;
+.card h2 {
+  margin-top: 0;
+  color: #0097a7;
 }
 
-.section-content {
-  background: #f9f9f9;
-  padding: 12px;
-  font-size: 14px;
-}
-
-.section-content ul {
+ul {
   margin: 0;
   padding-left: 20px;
 }
 
-.section-content a {
-  color: #1a237e;
+a {
+  color: #00796b;
   text-decoration: none;
 }
-
-.section-content a:hover {
+a:hover {
   text-decoration: underline;
 }
 
+/* Formulaire */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.contact-form button {
+  padding: 10px;
+  background: #0097a7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #00796b;
+}
